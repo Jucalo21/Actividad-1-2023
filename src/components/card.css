@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid #ccc;
+    max-width: 200;
+    max-height: 200;
+    min-width: 200;
+    min-height: 200;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
