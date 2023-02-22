@@ -1,5 +1,3 @@
-import React, { useState } from 'react'
-
 export const Hijo2 = (props) => {
     function Incrementar() {
         props.actualizarContador((prevContador) => prevContador + 1);
