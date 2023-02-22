@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
 export const Hijo2 = (props) => {
-const [cont, setCont] = React.useState(0);
-
     function Incrementar() {
         props.actualizarContador((prevContador) => prevContador + 1);
     }
@@ -13,7 +11,6 @@ const [cont, setCont] = React.useState(0);
 
     function Resetear() {
         props.actualizarContador(0);
-        
     }
 
 return (
