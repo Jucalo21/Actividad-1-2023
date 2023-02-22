@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export const Hijo2 = () => {
+export const Hijo2 = (props) => {
+const [cont, setCont] = React.useState(0);
+
+    function Incrementar() {
+        props.actualizarContador((prevContador) => prevContador + 1);
+    }
+
+    function Decrementar() {
+        props.actualizarContador((prevContador) => prevContador - 1);
+    }
+
+    function Resetear() {
+        props.actualizarContador(0);
+        
+    }
+
 return (
     <div className='footer-box'>
-        <button>Incrementar</button>
-        <button>Decrementar</button>
-        <button>Resetear</button>
-        <p className="contador">contador</p>
+        <button onClick={Incrementar}>Incrementar</button>
+        <button onClick={Decrementar}>Decrementar</button>
+        <button onClick={Resetear}>Resetear</button>
     </div>
 )
 }
