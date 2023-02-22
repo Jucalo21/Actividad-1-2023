@@ -1,13 +1,13 @@
 import React from 'react'
 import './card.css'
 
-export const Hijo = () => {
+export const Hijo = (props) => {
 return (
     <div className="card">
-        <h2>Titulo</h2>
-        <img src="url imagen" alt="No sirve"/>
+        <h2>{props.titulo}</h2>
+        <img src={props.imagen} alt={props.titulo}/>
         <h4>contador:</h4>
-        <p>Texto</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis semper nisi eu luctus. Vestibulum.</p>
         <button>Detalle</button>
     </div>
 )
