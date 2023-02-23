@@ -58,7 +58,9 @@ function actualizarContador(nuevoValor) {
     return (
         <div className="card-list">
         <hr />
-        <Hijo2 className="Footer-box" actualizarContador={actualizarContador}/>
+        <Hijo2 className="Footer-box" actualizarContador={actualizarContador}
+        contador={cont}
+        />
         {
             datos.map((producto, index)=>(
                 <Hijo

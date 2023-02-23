@@ -16,6 +16,7 @@ return (
         <button onClick={Incrementar}>Incrementar</button>
         <button onClick={Decrementar}>Decrementar</button>
         <button onClick={Resetear}>Resetear</button>
+        <h4>contador:{props.contador}</h4>
     </div>
 )
 }
